@@ -26,7 +26,7 @@ const Mainpage = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <Image
-            src="/image.png"
+            src="/image.jpg"
             width={1000}
             height={1000}
             className="lg:w-[200px] lg:h-[200px] w-[150px] h-[150px] object-cover"
