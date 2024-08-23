@@ -97,9 +97,7 @@ const SkillsetPage = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               <div className="bg-[#5cc38f] text-black py-4 px-6">
-                <h2 className="lg:text-xl text-sm font-semibold">
-                  {category.name}
-                </h2>
+                <h2 className="lg:text-xl text-sm ">{category.name}</h2>
               </div>
               <ul className="p-6 space-y-4">
                 {category.skills.map((skill, skillIndex) => (
