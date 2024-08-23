@@ -32,14 +32,14 @@ const Sidemenu = () => {
             <li key={label}>
               <Link href={href}>
                 <div
-                  className={`flex items-center gap-1 hover:text-blue-500 ${
-                    isActive ? "text-blue-500 font-bold" : "text-black"
+                  className={`flex items-center gap-1 hover:text-[#5cc38f] ${
+                    isActive ? "text-[#5cc38f] font-bold" : "text-black"
                   }`}
                 >
                   {/* Render the icon component */}
                   <Icon
                     className={`sm:text-2xl text-2xl ${
-                      isActive ? "text-blue-500" : "text-black"
+                      isActive ? "text-[#5cc38f]" : "text-black"
                     }`}
                   />
                   {/* Render the label text (hidden on smaller screens) */}

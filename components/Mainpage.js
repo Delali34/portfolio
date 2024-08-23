@@ -29,7 +29,7 @@ const Mainpage = () => {
             src="/image.jpg"
             width={1000}
             height={1000}
-            className="lg:w-[200px] lg:h-[200px] w-[150px] h-[150px] object-cover"
+            className="lg:w-[200px] lg:h-[200px] w-[150px] h-[150px] object-cover rounded-full"
             alt="Profile picture"
           />
         </motion.div>
@@ -50,7 +50,7 @@ const Mainpage = () => {
               <Link href="/aboutme">
                 <motion.h2
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#e8ffa5] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#d9f08c] transition-colors duration-300"
+                  className="bg-[#5cc38f] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#5cc38f] transition-colors duration-300"
                 >
                   About me
                 </motion.h2>
@@ -59,7 +59,7 @@ const Mainpage = () => {
               <Link href="/message">
                 <motion.h2
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#e8ffa5] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#d9f08c] transition-colors duration-300"
+                  className="bg-[#5cc38f] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#5cc38f] transition-colors duration-300"
                 >
                   Message
                 </motion.h2>
@@ -68,7 +68,7 @@ const Mainpage = () => {
               <Link href="/CV Dela.pdf" download>
                 <motion.h2
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#e8ffa5] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#d9f08c] transition-colors duration-300"
+                  className="bg-[#5cc38f] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#5cc38f] transition-colors duration-300"
                 >
                   Download CV
                 </motion.h2>

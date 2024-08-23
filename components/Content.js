@@ -42,13 +42,13 @@ const Content = () => {
             {/* Icon for each menu item */}
             <Icon
               className={`mr-2 md:text-xl text-2xl ${
-                selectedContent === text ? "text-blue-500" : ""
+                selectedContent === text ? "text-[#5cc38f]" : ""
               }`}
             />
             {/* Text for each menu item (hidden on small screens) */}
             <p
               className={`lg:text-xl md:text-[16px] hidden md:block ${
-                selectedContent === text ? "font-bold underline" : ""
+                selectedContent === text ? "font-bold" : ""
               }`}
             >
               {text}

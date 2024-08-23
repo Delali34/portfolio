@@ -6,7 +6,6 @@ import {
   FaCss3Alt,
   FaJs,
   FaFigma,
-  // FaAdobe,
   FaGoogle,
   FaMailchimp,
   FaFacebook,
@@ -58,7 +57,6 @@ const SkillsetPage = () => {
         { name: "Premiere Pro", icon: <SiAdobepremierepro /> },
         { name: "Illustrator", icon: <SiAdobeillustrator /> },
         { name: "After Effects", icon: <SiAdobeaftereffects /> },
-        // { name: "Canva", icon: <FaCanva /> },
       ],
     },
     {
@@ -98,7 +96,7 @@ const SkillsetPage = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
-              <div className="bg-[#d9f08c] text-black py-4 px-6">
+              <div className="bg-[#5cc38f] text-black py-4 px-6">
                 <h2 className="lg:text-xl text-sm font-semibold">
                   {category.name}
                 </h2>
@@ -106,9 +104,7 @@ const SkillsetPage = () => {
               <ul className="p-6 space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex items-center space-x-3">
-                    <span className="text-2xl text-[#d9f08c]">
-                      {skill.icon}
-                    </span>
+                    <span className="text-2xl">{skill.icon}</span>
                     <span className="text-gray-700">{skill.name}</span>
                   </li>
                 ))}

@@ -106,7 +106,7 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col h-[80vh] max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-xl">
-      <div className="bg-[#E8FFA5] text-black p-4">
+      <div className="bg-[#5cc38f] text-black p-4">
         <h2 className="text-xl font-bold">Chat with Me</h2>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
@@ -115,7 +115,7 @@ const ContactForm = () => {
             key={index}
             className={`my-2 p-2 rounded-lg max-w-[80%] ${
               message.sender === "user"
-                ? "ml-auto bg-[#E8FFA5]"
+                ? "ml-auto bg-[#5cc38f]"
                 : "mr-auto bg-gray-100"
             }`}
           >
@@ -132,15 +132,15 @@ const ContactForm = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#E8FFA5]"
+              className="flex-1 p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#5cc38f]"
               disabled={currentStep === "done"}
             />
           )}
           <button
             type="submit"
-            className={`bg-[#E8FFA5] text-black p-2 ${
+            className={`bg-[#5cc38f] text-black p-2 ${
               currentStep !== "confirm" ? "rounded-r-lg" : "rounded-lg w-full"
-            } hover:bg-[#d9f085] focus:outline-none focus:ring-2 focus:ring-[#E8FFA5] disabled:bg-gray-300`}
+            } hover:bg-[#5cc38f] focus:outline-none focus:ring-2 focus:ring-[#5cc38f] disabled:bg-gray-300`}
             disabled={currentStep === "done"}
           >
             {currentStep === "confirm" ? "Confirm" : <FaPaperPlane />}
