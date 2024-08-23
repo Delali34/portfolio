@@ -8,16 +8,16 @@ import React from "react";
 const Scrolltext = () => {
   return (
     <div className="text-wrapper font-hero top-0 sticky z-10">
-      <h1 className="uppercase text-wrapper2 lg:text-[30px] text-[20px]">
+      <h1 className="uppercase text-wrapper2 lg:text-[20px] text-[10px]">
         WELCOME TO MY PORTOFOLIO
       </h1>
-      <h1 className="uppercase text-wrapper2 lg:text-[30px] text-[20px]">
+      <h1 className="uppercase text-wrapper2 lg:text-[20px] text-[10px]">
         WELCOME TO MY PORTOFOLIO
       </h1>
-      <h1 className="uppercase text-wrapper2 lg:text-[30px] text-[20px]">
+      <h1 className="uppercase text-wrapper2 lg:text-[20px] text-[10px]">
         WELCOME TO MY PORTOFOLIO
       </h1>
-      <h1 className="uppercase text-wrapper2 lg:text-[30px] text-[20px]">
+      <h1 className="uppercase text-wrapper2 lg:text-[20px] text-[10px]">
         WELCOME TO MY PORTOFOLIO
       </h1>
     </div>
