@@ -32,7 +32,7 @@ const ProfilePage = () => {
         className="max-w-5xl mx-auto flex items-center justify-center py-6"
       >
         <Image
-          src="/image.png"
+          src="/image.jpg"
           width={120}
           height={120}
           alt="Anyomitse Ernest"
