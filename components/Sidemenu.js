@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { IoMdHome } from "react-icons/io";
+import { IoHomeSharp } from "react-icons/io5";
 import { FaBlogger } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { IoShareSocialSharp } from "react-icons/io5";
@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 
 // Define an array of menu items with their respective properties
 const menuItems = [
-  { href: "/", icon: IoMdHome, label: "Home" },
+  { href: "/", icon: IoHomeSharp, label: "Home" },
   { href: "/blog", icon: FaBlogger, label: "Blog" },
   { href: "/skillset", icon: FaTools, label: "Skillsets" },
   { href: "/aboutme", icon: ImProfile, label: "About" },
@@ -38,7 +38,7 @@ const Sidemenu = () => {
                 >
                   {/* Render the icon component */}
                   <Icon
-                    className={`sm:text-2xl ${
+                    className={`sm:text-2xl text-2xl ${
                       isActive ? "text-blue-500" : "text-black"
                     }`}
                   />
