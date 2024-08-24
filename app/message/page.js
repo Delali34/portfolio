@@ -14,6 +14,7 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -79,6 +80,7 @@ const ContactForm = () => {
         setCurrentStep("confirm");
         break;
       case "confirm":
+        setIsSending(true);
         try {
           await emailjs.send(
             "service_mo1be1b",
@@ -90,7 +92,8 @@ const ContactForm = () => {
             ...prev,
             { text: "I have received your message. Thank you!", sender: "bot" },
           ]);
-          setCurrentStep("done");
+          setCurrentStep("name");
+          setFormData({ name: "", email: "", message: "" });
         } catch (error) {
           setMessages((prev) => [
             ...prev,
@@ -100,6 +103,7 @@ const ContactForm = () => {
             },
           ]);
         }
+        setIsSending(false);
         break;
     }
   };
@@ -133,7 +137,7 @@ const ContactForm = () => {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."
               className="flex-1 p-2 text-xs border rounded-l-lg focus:outline-none focus:ring-1 focus:ring-[#5cc38f]"
-              disabled={currentStep === "done"}
+              disabled={isSending}
             />
           )}
           <button
@@ -141,9 +145,17 @@ const ContactForm = () => {
             className={`bg-[#5cc38f] text-black p-2 ${
               currentStep !== "confirm" ? "rounded-r-lg" : "rounded-lg w-full"
             } hover:bg-[#5cc38f] focus:outline-none focus:ring-1 focus:ring-[#5cc38f] disabled:bg-gray-300`}
-            disabled={currentStep === "done"}
+            disabled={isSending}
           >
-            {currentStep === "confirm" ? "Confirm" : <FaPaperPlane />}
+            {currentStep === "confirm" ? (
+              isSending ? (
+                "Sending..."
+              ) : (
+                "Confirm"
+              )
+            ) : (
+              <FaPaperPlane />
+            )}
           </button>
         </div>
       </form>
