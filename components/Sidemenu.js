@@ -23,8 +23,8 @@ const Sidemenu = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 flex md:w-64 w-28 md:gap-7 gap-4 lg:gap-10 lg:top-[45px] top-[30px]">
-      <ul className="flex mt-20 ml-3 md:ml-5 flex-col gap-8">
+    <nav className="fixed bottom-0 left-0 right-0 flex md:w-64 w-28 md:gap-7 gap-4 lg:gap-10 top-0">
+      <ul className="flex mt-32 ml-3 md:ml-5 flex-col gap-8">
         {menuItems.map(({ href, icon: Icon, label }) => {
           // Check if the current menu item is active
           const isActive = pathname === href;

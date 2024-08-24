@@ -105,15 +105,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col h-[80vh] max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-xl">
+    <div className="flex flex-col h-[80vh] md:max-w-md max-w-sm mx-auto bg-white rounded-lg overflow-hidden shadow-xl">
       <div className="bg-[#5cc38f] text-black p-4">
-        <h2 className="text-xl font-bold">Chat with Me</h2>
+        <h2 className="md:text-xl text-sm font-bold">Chat with Me</h2>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`my-2 p-2 rounded-lg max-w-[80%] ${
+            className={`my-2 p-2 md:text-[16px] text-[13px] rounded-lg max-w-[80%] ${
               message.sender === "user"
                 ? "ml-auto bg-[#5cc38f]"
                 : "mr-auto bg-gray-100"
