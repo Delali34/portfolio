@@ -105,7 +105,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col h-[80vh] w-full md:max-w-md max-w-xs mx-auto  rounded-lg overflow-hidden shadow-xl">
+    <div className="flex flex-col h-[80vh] w-full md:max-w-md max-w-xs bg-[#0e171c] mx-auto background-image  rounded-lg overflow-hidden shadow-xl">
       <div className="bg-[#5cc38f] text-black p-4">
         <h2 className="md:text-xl text-sm font-bold">Chat with Me</h2>
       </div>
@@ -124,7 +124,7 @@ const ContactForm = () => {
         ))}
         <div ref={messagesEndRef} />
       </div>
-      <form onSubmit={handleSubmit} className="p-4 bg-gray-100">
+      <form onSubmit={handleSubmit} className="p-4 ">
         <div className="flex items-center">
           {currentStep !== "confirm" && (
             <input
@@ -132,7 +132,7 @@ const ContactForm = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[#5cc38f]"
+              className="flex-1 p-2 text-xs border rounded-l-lg focus:outline-none focus:ring-1 focus:ring-[#5cc38f]"
               disabled={currentStep === "done"}
             />
           )}
@@ -140,7 +140,7 @@ const ContactForm = () => {
             type="submit"
             className={`bg-[#5cc38f] text-black p-2 ${
               currentStep !== "confirm" ? "rounded-r-lg" : "rounded-lg w-full"
-            } hover:bg-[#5cc38f] focus:outline-none focus:ring-2 focus:ring-[#5cc38f] disabled:bg-gray-300`}
+            } hover:bg-[#5cc38f] focus:outline-none focus:ring-1 focus:ring-[#5cc38f] disabled:bg-gray-300`}
             disabled={currentStep === "done"}
           >
             {currentStep === "confirm" ? "Confirm" : <FaPaperPlane />}
