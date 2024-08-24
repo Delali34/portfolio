@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <Scrolltext />
         <div className="flex flex-grow">
           <Sidemenu />
-          <main className="flex-grow p-5 lg:ml-64 md:ml-32 ml-10">
+          <main className="flex-grow  p-5 lg:pl-64 md:pl-32 pl-16 overflow-hidden">
             {children}
           </main>
         </div>

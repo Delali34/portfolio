@@ -105,7 +105,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col h-[80vh] w-full  mx-auto bg-white rounded-lg overflow-x-hidden shadow-xl">
+    <div className="flex flex-col h-[80vh] w-full md:max-w-md max-w-xs mx-auto  rounded-lg overflow-hidden shadow-xl">
       <div className="bg-[#5cc38f] text-black p-4">
         <h2 className="md:text-xl text-sm font-bold">Chat with Me</h2>
       </div>
