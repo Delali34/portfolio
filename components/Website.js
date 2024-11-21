@@ -26,6 +26,21 @@ const websites = [
     techStack: ["Nextjs", "TailwindCSS", "Vercel", "HygraphCMS", "Paystack"],
   },
   {
+    id: 2,
+    title: "The brocode website",
+    image: "/brocode.png",
+    livePreview: "https://www.thebrocodegh.com/",
+    techStack: [
+      "Nextjs",
+      "TailwindCSS",
+      "Vercel",
+      "HygraphCMS",
+      "Paystack",
+      "Google Analytics",
+      "Mailchimp",
+    ],
+  },
+  {
     id: 3,
     title: "AfricaHPO Website",
     image: "/health.jpg",
