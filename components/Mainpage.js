@@ -65,7 +65,7 @@ const Mainpage = () => {
                 </motion.h2>
               </Link>
               {/* Download CV button */}
-              <Link href="/CV Dela.pdf" download>
+              <Link href="/Ernest Delali.pdf" download>
                 <motion.h2
                   whileHover={{ scale: 1.05 }}
                   className="bg-[#5cc38f] py-2 px-4 md:text-sm sm:text-sm text-[10px] border border-black rounded-xl hover:bg-[#5cc38f] transition-colors duration-300"
