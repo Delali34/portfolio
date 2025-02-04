@@ -6,8 +6,8 @@ const websites = [
   {
     id: 1,
     title: "E-commerce Website",
-    image: "/clothing.jpg",
-    livePreview: "https://my-fashion-store.vercel.app/",
+    image: "/shop.png",
+    livePreview: "https://shop-eacj.vercel.app/",
     techStack: [
       "Next.js",
       "Tailwind CSS",
@@ -16,14 +16,23 @@ const websites = [
       "PostgreSQL",
       "Paystack",
       "HygraphCMS",
+      "framer-motion",
     ],
   },
+
   {
     id: 2,
     title: "EminenceLead Website",
-    image: "/eminence.jpg",
+    image: "/ngo.png",
     livePreview: "https://eminence-mu.vercel.app/",
     techStack: ["Nextjs", "TailwindCSS", "Vercel", "HygraphCMS", "Paystack"],
+  },
+  {
+    id: 1,
+    title: "Blog website",
+    image: "/chiaky.png",
+    livePreview: "https://www.chiakyotuteye.com/",
+    techStack: [, "Next.js", "Tailwind CSS", "HygraphCMS"],
   },
   {
     id: 2,
@@ -43,30 +52,24 @@ const websites = [
   {
     id: 3,
     title: "AfricaHPO Website",
-    image: "/health.jpg",
+    image: "/hpo.png",
     livePreview: "https://www.africahealthpromotion.org/",
     techStack: ["Nextjs", "TailwindCSS", "HygraphCMS"],
   },
-  {
-    id: 1,
-    title: "Blog website",
-    image: "/chiaky.jpg",
-    livePreview: "https://www.chiakyotuteye.com/",
-    techStack: [, "Next.js", "Tailwind CSS", "HygraphCMS"],
-  },
+
   {
     id: 2,
     title: "Flairup Website",
-    image: "/flairup.jpg",
+    image: "/flairup.png",
     livePreview: "https://flairup.vercel.app/",
     techStack: ["React", "CSS", "Aos Animate", "After Effects"],
   },
   {
     id: 2,
-    title: "Cleanenergycafe Website",
-    image: "/clean.jpg",
-    livePreview: "https://cleanenergycafe.vercel.app/",
-    techStack: ["Nextjs", "TailwindCSS", "Aos Animate", "HygraphCMS"],
+    title: "Leadafriue International Website",
+    image: "/lead.png",
+    livePreview: "https://www.leadafrique.org/",
+    techStack: ["Nextjs", "TailwindCSS", "framer-motion", "HygraphCMS"],
   },
 ];
 
